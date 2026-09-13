@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriSmart AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌾 AgriSmart AI</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#recommend">AI Recommendation</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h1>Smart Farming with <span>AI</span></h1>
+
+        <p>
+            AgriSmart AI helps farmers make better decisions
+            using smart agriculture technology.
+        </p>
+
+        <a href="#recommend" class="btn">
+            Get AI Recommendation
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="features">
+
+    <h2>Our Smart Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h3>Crop Recommendation</h3>
+            <p>
+                Get suitable crop suggestions based on soil
+                and environmental conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💧</div>
+            <h3>Smart Irrigation</h3>
+            <p>
+                Get suggestions to manage water efficiently
+                and reduce water waste.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌦️</div>
+            <h3>Weather Insights</h3>
+            <p>
+                Use weather information to plan farming
+                activities.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧪</div>
+            <h3>Soil Analysis</h3>
+            <p>
+                Enter soil values and receive simple
+                agriculture recommendations.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="recommend" class="recommend">
+
+    <h2>🌾 AI Crop Recommendation</h2>
+
+    <p>Enter your soil information</p>
+
+    <div class="form">
+
+        <label>Nitrogen (N)</label>
+        <input type="number" id="nitrogen" placeholder="Example: 50">
+
+        <label>Phosphorus (P)</label>
+        <input type="number" id="phosphorus" placeholder="Example: 40">
+
+        <label>Potassium (K)</label>
+        <input type="number" id="potassium" placeholder="Example: 40">
+
+        <label>Soil pH</label>
+        <input type="number" step="0.1" id="ph" placeholder="Example: 6.5">
+
+        <button onclick="recommendCrop()">
+            🔍 Analyze Soil
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+</section>
+
+
+<section id="about" class="about">
+
+    <h2>About AgriSmart AI</h2>
+
+    <p>
+        AgriSmart AI is a smart agriculture project designed
+        to help farmers use technology for better crop
+        planning and efficient resource management.
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 AgriSmart AI | College Expo Project</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
